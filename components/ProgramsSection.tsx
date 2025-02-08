@@ -1,80 +1,97 @@
 // components/ProgramsSection.tsx
 import Image from 'next/image';
 
-const programs = [
-  {
-    title: "Kids Classes (Ages 5-12)",
-    description: "Build confidence, discipline, and physical skills in a fun, safe environment.",
-    price: "£49.99",
-    features: [
-      "Age-appropriate curriculum",
-      "Character development focus",
-      "Anti-bullying techniques",
-      "2 classes per week"
-    ]
-  },
-  {
-    title: "Adult Classes (13+)",
-    description: "Challenge yourself with traditional Taekwondo training and modern fitness methods.",
-    price: "£59.99",
-    features: [
-      "Technical sparring",
-      "Forms training",
-      "Strength & conditioning",
-      "Unlimited classes"
-    ]
-  },
-  {
-    title: "Family Program",
-    description: "Train together, grow together. Special rates for families.",
-    price: "£129.99",
-    features: [
-      "Up to 4 family members",
-      "Flexible scheduling",
-      "Shared experience",
-      "Community events"
-    ]
-  }
-];
-
 export default function ProgramsSection() {
   return (
-    <section id="programs" className="py-20 bg-black">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Our Programs
-        </h2>
+    <section id="programs" className="py-20 bg-gray-900">
+      <div className="container mx-auto px-8 sm:px-12 lg:px-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Classes</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {programs.map((program, index) => (
-            <div
-              key={index}
-              className="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300"
-            >
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-4">{program.title}</h3>
-                <p className="text-gray-400 mb-4">{program.description}</p>
-                <p className="text-3xl font-bold text-red-600 mb-4">
-                  {program.price}
-                  <span className="text-sm text-gray-400">/month</span>
-                </p>
-                <ul className="space-y-2 mb-6">
-                  {program.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center">
-                      <span className="text-red-600 mr-2">•</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+        {/* Kids Class */}
+        <div className="grid md:grid-cols-2 gap-12 mb-20">
+          <div className="relative h-[400px]">
+            <Image
+              src="/images/classes/kids-class.jpg"
+              alt="Kids Taekwondo Class"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
+          <div className="flex flex-col justify-center">
+            <h3 className="text-2xl font-bold mb-6">Kids Classes (Ages 5-12)</h3>
+            <div className="space-y-4 text-gray-300">
+              <p>
+                Our kids' program focuses on developing fundamental motor skills, discipline, 
+                and confidence through the art of Taekwondo. Each class is structured to be 
+                both fun and educational, helping children build physical skills while learning 
+                valuable life lessons.
+              </p>
+              <p>
+                What to expect:
+              </p>
+              <ul className="list-disc list-inside space-y-2 ml-4">
+                <li>Age-appropriate curriculum</li>
+                <li>Focus on discipline and respect</li>
+                <li>Anti-bullying techniques</li>
+                <li>Physical coordination development</li>
+                <li>Fun and engaging environment</li>
+              </ul>
+              <p className="text-lg font-semibold mt-6">
+                First class is free - come and try!
+              </p>
+              <div className="mt-8">
                 <a
                   href="#book-class"
-                  className="block text-center bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition"
+                  className="inline-block bg-red-600 text-white px-8 py-3 rounded hover:bg-red-700 transition"
                 >
-                  Start Free Trial
+                  Book Free Trial Class
                 </a>
               </div>
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* Adult Class */}
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="flex flex-col justify-center order-2 md:order-1">
+            <h3 className="text-2xl font-bold mb-6">Adult Classes (13+)</h3>
+            <div className="space-y-4 text-gray-300">
+              <p>
+                Our adult program combines traditional Taekwondo training with modern fitness 
+                methods. Whether your goal is fitness, self-defense, or competition, our 
+                structured curriculum will help you achieve your potential.
+              </p>
+              <p>
+                What to expect:
+              </p>
+              <ul className="list-disc list-inside space-y-2 ml-4">
+                <li>Technical sparring training</li>
+                <li>Poomsae (forms) practice</li>
+                <li>Strength and conditioning</li>
+                <li>Self-defense applications</li>
+                <li>Competition preparation (optional)</li>
+              </ul>
+              <p className="text-lg font-semibold mt-6">
+                First class is free - come and try!
+              </p>
+              <div className="mt-8">
+                <a
+                  href="#book-class"
+                  className="inline-block bg-red-600 text-white px-8 py-3 rounded hover:bg-red-700 transition"
+                >
+                  Book Free Trial Class
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="relative h-[400px] order-1 md:order-2">
+            <Image
+              src="/images/classes/adult-class.jpg"
+              alt="Adult Taekwondo Class"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
         </div>
       </div>
     </section>
