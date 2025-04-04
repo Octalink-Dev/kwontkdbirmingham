@@ -11,7 +11,7 @@ export default function ProgramsSection() {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div className="relative h-[400px]">
             <Image
-              src="/images/classes/kids-class.jpg"
+              src="/images/classes/MG6.png"
               alt="Kids Taekwondo Class"
               fill
               className="object-cover rounded-lg"
@@ -86,7 +86,7 @@ export default function ProgramsSection() {
           </div>
           <div className="relative h-[400px] order-1 md:order-2">
             <Image
-              src="/images/classes/adult-class.jpg"
+              src="/images/classes/MG7.png"
               alt="Adult Taekwondo Class"
               fill
               className="object-cover rounded-lg"

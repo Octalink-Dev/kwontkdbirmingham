@@ -8,7 +8,7 @@ export default function GrandMasterSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[500px] rounded-lg overflow-hidden">
             <Image
-              src="/api/placeholder/800/1000"
+              src="/images/classes/MG4.png"
               alt="Grand Master"
               fill
               className="object-cover"

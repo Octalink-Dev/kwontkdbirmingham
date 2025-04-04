@@ -6,6 +6,7 @@ import ProgramsSection from '@/components/ProgramsSection';
 import GrandMasterSection from '@/components/GrandMasterSection';
 import LocationsSection from '@/components/LocationSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import BookingForm from '@/components/BookingForm';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
             <a href="#locations" className="hover:text-red-600 transition">Locations</a>
           </div>
           <a 
-            href="#book-class"
+            href="https://calendly.com/omidkwontkd/tkd-classes"
             className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"
           >
             Book Free Class
@@ -36,6 +37,7 @@ export default function Home() {
         <GrandMasterSection />
         <LocationsSection />
         <TestimonialsSection />
+        <BookingForm />
       </main>
 
       <footer className="bg-black text-white py-12">
