@@ -9,22 +9,26 @@ export default function ProgramsSection() {
         
         {/* Kids Class */}
         <div className="grid md:grid-cols-2 gap-12 mb-20">
-          <div className="relative h-[400px]">
+          <div className="relative h-[400px] overflow-hidden rounded-lg">
             <Image
-              src="/images/classes/MG6.png"
+              src="/images/classes/MG11.png"
               alt="Kids Taekwondo Class"
               fill
-              className="object-cover rounded-lg"
+              quality={100}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority={true}
+              className="object-cover"
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
             />
           </div>
           <div className="flex flex-col justify-center">
             <h3 className="text-2xl font-bold mb-6">Kids Classes (Ages 5-12)</h3>
             <div className="space-y-4 text-gray-300">
               <p>
-                Our kids' program focuses on developing fundamental motor skills, discipline, 
-                and confidence through the art of Taekwondo. Each class is structured to be 
-                both fun and educational, helping children build physical skills while learning 
-                valuable life lessons.
+                &quot;Our kids&apos; program focuses on developing fundamental motor skills,
+                discipline, and confidence through the art of Taekwondo.
+                Each class is structured to be both fun and educational,
+                helping children build physical skills while learning valuable life lessons.&quot;
               </p>
               <p>
                 What to expect:
@@ -57,8 +61,8 @@ export default function ProgramsSection() {
             <h3 className="text-2xl font-bold mb-6">Adult Classes (13+)</h3>
             <div className="space-y-4 text-gray-300">
               <p>
-                Our adult program combines traditional Taekwondo training with modern fitness 
-                methods. Whether your goal is fitness, self-defense, or competition, our 
+                Our adult program combines traditional Taekwondo training with modern fitness
+                methods. Whether your goal is fitness, self-defense, or competition, our
                 structured curriculum will help you achieve your potential.
               </p>
               <p>
@@ -84,12 +88,16 @@ export default function ProgramsSection() {
               </div>
             </div>
           </div>
-          <div className="relative h-[400px] order-1 md:order-2">
+          <div className="relative h-[400px] overflow-hidden rounded-lg order-1 md:order-2">
             <Image
-              src="/images/classes/MG7.png"
+              src="/images/classes/MG10.png"
               alt="Adult Taekwondo Class"
               fill
-              className="object-cover rounded-lg"
+              quality={100}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority={true}
+              className="object-cover"
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
             />
           </div>
         </div>
