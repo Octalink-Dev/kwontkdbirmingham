@@ -28,7 +28,7 @@ export default function HeroSection() {
             <span className="text-red-600">POTENTIAL</span>
           </h1>
           <p className="text-xl mb-12 max-w-2xl">
-            Join Birmingham's premier Taekwondo academy and discover the path to physical and mental excellence.
+          &quot;Join Birmingham&apos;s premier Taekwondo academy and discover the path to physical and mental excellence.&quot;
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -37,7 +37,7 @@ export default function HeroSection() {
             >
               Start Your Journey
             </a>
-            <p className="text-sm mt-2 sm:mt-4">Starting at £49.99/month</p>
+            <p className="text-sm mt-2 sm:mt-4">first session is free</p>
           </div>
         </div>
       </div>

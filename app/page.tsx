@@ -1,10 +1,10 @@
 // app/page.tsx
-import Image from 'next/image';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ProgramsSection from '@/components/ProgramsSection';
 import GrandMasterSection from '@/components/GrandMasterSection';
 import LocationsSection from '@/components/LocationSection';
+import TimetableSection from '@/components/TimetableSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import BookingForm from '@/components/BookingForm';
 
@@ -22,7 +22,7 @@ export default function Home() {
             <a href="#locations" className="hover:text-red-600 transition">Locations</a>
           </div>
           <a 
-            href="https://calendly.com/omidkwontkd/tkd-classes"
+            href="https://calendly.com/omidkwontkd/30min"
             className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"
           >
             Book Free Class
@@ -37,6 +37,7 @@ export default function Home() {
         <GrandMasterSection />
         <LocationsSection />
         <TestimonialsSection />
+        <TimetableSection />
         <BookingForm />
       </main>
 
@@ -49,8 +50,8 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Contact</h3>
-              <p>Email: info@kwontkd.com</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>Email: kwontkdbirmingham@gmail.com</p>
+              <p>Phone: 07815160009</p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Follow Us</h3>
